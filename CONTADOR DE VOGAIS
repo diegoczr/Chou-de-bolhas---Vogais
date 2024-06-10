@@ -13,7 +13,7 @@ function contaVogais() {
   texto=texto.toLowerCase();
   for(var i=0; i<texto.length; i++){
     if(texto.charAt(i)=="a"||texto.charAt(i)=="e"||texto.charAt(i)=="i"||texto.charAt(i)=="o"||texto.charAt(i)=="u"){
-       cont++; //Incrementa a contagem de vogais
+       cont++; 
     }
   }
   document.getElementById("idTexto").innerHTML = "Número de vogais no texto: " + cont;
@@ -34,8 +34,8 @@ CSS
 <H3> 
 
 <form name="vogais">
-DALE A PALAVRA MEU PRINCIPE :<input type="text" id="idString">
-<br><button type="button" name="btn01" id="idBotao" onclick="contaVogais()";>Clique</button>
+LANÇA A BRABA :<input type="text" id="idString">
+<br><button type="button" name="btn01" id="idBotao" onclick="contaVogais()";>DALE</button>
 </form>
 
 <br><span id="idTexto"></span><br>
@@ -52,10 +52,7 @@ function contaVogais() {
   const vogais = texto.match(/[aeiou]/gi)
   const cont = vogais.length;
   /*
-  string.match compara uma string com uma expressão regular, e retorna um array com as correspondências encontradas.
-  [ ] = buscar qualquer caractere da lista dentro dos colchetes
-  g = busca global: continue procurando após encontrar uma correspondência
-  i = busca case-insensitive (sem diferenciar maiúsculas e minúsculas
+
   */
   document.getElementById("idTexto").innerHTML = "Número de vogais no texto: " + cont;
   // document.getElementById("idVogais").innerHTML = "Vogais encontradas: " + vogais;
